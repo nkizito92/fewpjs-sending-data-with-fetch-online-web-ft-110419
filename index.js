@@ -21,6 +21,7 @@ function submitData(name, email) {
         .then(obj => {
           const h1 = document.createElement("h1");
           h1.innerHTML = obj.id;
+          body.appendChild(h1)
         })
         .catch(error => {
           let div = document.createElement("div");
