@@ -20,10 +20,10 @@ function submitData(name, email) {
           const h1 = document.ge
         })
         .catch(error => {
-          const body = document.querySelector("body");
           let div = document.createElement("div");
           div.innerHTML = error.message;
           body.appendChild(div);
         });
+          const body = document.querySelector("body");
 
 }
