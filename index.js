@@ -20,12 +20,12 @@ function submitData(name, email) {
         .then(res => res.json())
         .then(obj => {
           const h1 = document.createElement("h1");
-          h1.innerHTML = obj.id;
+          h1.innerHTML = `obj.id`;
           body.appendChild(h1)
         })
         .catch(error => {
           let div = document.createElement("div");
-          div.innerHTML = error.message;
+          div.innerHTML = `error.message`;
           body.appendChild(div);
         });
 
