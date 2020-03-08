@@ -23,7 +23,7 @@ function submitData(name, email) {
           const body = document.querySelector("body");
           let div = document.createElement("div");
           div.innerHTML = error.message;
-          err.appendChild(div);
+          body.appendChild(div);
         });
 
 }
