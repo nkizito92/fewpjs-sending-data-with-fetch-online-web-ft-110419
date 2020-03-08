@@ -1,6 +1,6 @@
 // Add your code here
 function submitData(name, email) {
-     const body = document.querySelector("body");
+    const body = document.querySelector("body");
     let formData = {
         name: name,
         email: email
