@@ -21,7 +21,7 @@ function submitData(name, email) {
           const err = document.querySelector("body");
           let div = document.createElement("div");
           div.innerHTML = error.message;
-          err.appendChild(div)
+          err.appendChild(div);
         });
 
 }
