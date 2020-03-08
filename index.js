@@ -1,5 +1,6 @@
 // Add your code here
 function submitData(name, email) {
+     const body = document.querySelector("body");
     let formData = {
         name: name,
         email: email
@@ -24,6 +25,5 @@ function submitData(name, email) {
           div.innerHTML = error.message;
           body.appendChild(div);
         });
-          const body = document.querySelector("body");
 
 }
