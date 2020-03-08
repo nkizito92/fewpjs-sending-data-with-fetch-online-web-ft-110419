@@ -19,7 +19,8 @@ function submitData(name, email) {
     fetch("http://localhost:3000/users", configObj)
         .then(res => res.json())
         .then(obj => {
-          const h1 = document.createElement("h1")
+          const h1 = document.createElement("h1");
+          h1.innerHTML = obj.id;
         })
         .catch(error => {
           let div = document.createElement("div");
