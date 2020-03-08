@@ -20,7 +20,7 @@ function submitData(name, email) {
         .catch(error => {
           const err = document.querySelector("body");
           let div = document.createElement("div");
-          div..innerHTML = error.message
+          div.innerHTML = error.message;
           err.appendChild(div)
             console.log(error.message)
         });
