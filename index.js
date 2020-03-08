@@ -16,7 +16,9 @@ function submitData(name, email) {
 
     fetch("http://localhost:3000/users", configObj)
         .then(res => res.json())
-        .then(obj => console.log(obj))
+        .then(obj => {
+          const h1 = document.ge
+        })
         .catch(error => {
           const err = document.querySelector("body");
           let div = document.createElement("div");
