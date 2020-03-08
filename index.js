@@ -18,7 +18,8 @@ function submitData(name, email) {
         .then(res => res.json())
         .then(obj => console.log(obj))
         .catch(error => {
-            alert("Bad things!");
+          const err = document.querySelector("body")
+          let div = document.createElement("div")
             console.log(error.message)
         });
 
