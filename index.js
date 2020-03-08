@@ -18,8 +18,8 @@ function submitData(name, email) {
         .then(res => res.json())
         .then(obj => console.log(obj))
         .catch(error => {
-          const err = document.querySelector("body")
-          let div = document.createElement("div")
+          const err = document.querySelector("body");
+          let div = document.createElement("div");
             console.log(error.message)
         });
 
