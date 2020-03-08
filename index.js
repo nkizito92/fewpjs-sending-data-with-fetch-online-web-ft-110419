@@ -25,7 +25,7 @@ function submitData(name, email) {
         })
         .catch(error => {
           let div = document.createElement("div");
-          div.innerHTML = `${error.message}`;
+          div.innerHTML = `U`;
           body.appendChild(div);
         });
 
